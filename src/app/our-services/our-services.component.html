@@ -1,0 +1,50 @@
+<P class="title">HİZMETLERİMİZ</P>
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container" >
+        <div class="row justify-content-center">
+          <div *ngFor="let card of cards.slice(startIndex, endIndex + 1)" class="card mx-3" [style.backgroundImage]="'url(' + card.srcUrl + ')'">
+            <div class="card-body d-flex flex-column deneme">
+              <div>
+                <h5 class="card-title" >{{ card.title }}</h5>
+                <p class="card-text" >{{ card.description }}</p>
+              </div>
+              <div class="button-container" >
+                <button mat-fab color="warn" aria-label="Example icon button with a delete icon" class = "button">
+                  <mat-icon>build</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" (click)="prevSlide()">
+    <span aria-hidden="true"><img src="../../assets/button/back1.png" class="control" ></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" (click)="nextSlide()">
+    <span aria-hidden="true"><img src="../../assets/button/next1.png" class="control" ></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class="dene">
+<div class="container text-center " >
+  <div class="row container-whoweare" >
+    <div class="col left-column">
+      <p class="vision-title">Lorem, ipsum.</p>
+      <p class="vision-text">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="col right-column">
+     <img src="../../assets/gallery/foto1.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+
+</div>
+

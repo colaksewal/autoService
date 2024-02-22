@@ -1,0 +1,260 @@
+.title {
+    font-size: 70px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 100px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Gölge rengini ve boyutunu ayarlayın */
+}
+
+.container
+{
+    margin-top: 20px
+}
+
+.card {
+    height: 35rem;
+    width: 25rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4); /* Opacity değerini ayarlayın */
+    transition: background-color 0.3s; /* Geçiş efekti ekleyin */
+    padding: 20px;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Opacity değerini ayarlayın */
+    filter: brightness(100%); /* Parlaklık değerini ayarlayın */
+    z-index: -1; /* Kartın içeriğinin önüne çıkmaması için */
+}
+
+.card-title {
+    color: white; 
+    font-size: 24px; 
+    font-weight: 500;
+    margin-bottom: 10px; /* Yazılar arasında boşluk bırakmak için */
+}
+
+.card-text {
+    color: white;
+    font-size: 16px; 
+    font-weight: 400;
+    margin-bottom: 10px; /* Yazılar arasında boşluk bırakmak için */
+}
+
+.button-container {
+    position: absolute;
+    bottom: 100px;
+    left: 20%;
+    transform: translateX(-50%);
+}
+
+
+.carousel-item {
+    transition: transform 0.6s ease;
+}
+
+.carousel-inner {
+    overflow: hidden;
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+    transform: translateX(0);
+}
+
+.carousel-item-next,
+.active.carousel-item-right {
+    transform: translateX(100%);
+}
+
+.carousel-item-prev,
+.active.carousel-item-left {
+    transform: translateX(-100%);
+}
+
+.control{
+    height: 100px;
+}
+
+.dene{
+    background-color: black;
+}
+
+
+.right-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.right-column img {
+    max-width: 70%; /* Resmin en fazla genişliğini %100 yapar */
+    height: auto; /* Otomatik yükseklik ayarı, orijinal en-boy oranını korur */
+}
+
+
+
+.container-whoweare{
+    height: 70vh;
+}
+
+
+
+
+.vision-text{
+    color:white;
+    font-size: 35px;
+}
+
+.vision-subtext{
+    color: white;
+}
+
+.vision-title{
+    color:white;
+    font-size: 70px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 100px;
+    text-shadow: 2px 4px 4px rgba(255, 45, 45, 0.5); /* Gölge rengini ve boyutunu ayarlayın */
+}
+
+
+
+
+@media screen and (max-width: 1332px) {
+    .vision-container {
+        height: 40vh;
+    }
+
+    .right-side{
+        img{
+            height: 250px;
+            }
+        
+    }
+
+    .vision-title{
+        color:white;
+        font-size: 64px;
+        margin-top: 40px;
+    }
+   
+   
+
+
+  }
+  
+  
+@media screen and (max-width: 1196px) {
+    
+    .right-side{
+        img{
+            height: 200px;
+            }
+        
+    }
+
+    .vision-title{
+        color:white;
+        font-size: 34px;
+        margin-top: 20px;
+    }
+
+    .vision-subtext{
+        font-size: 16px;
+        margin-right: 334px;
+    }
+
+    
+.container-whoweare{
+    height: 50vh;
+}
+
+.right-column img {
+    max-width: 100%; /* Resmin en fazla genişliğini %100 yapar */
+    height: auto; /* Otomatik yükseklik ayarı, orijinal en-boy oranını korur */
+}
+
+
+
+   
+   
+
+
+  }
+  
+  @media screen and (max-width: 1116px) {
+
+    .right-side{
+        img{
+            height: 100px;
+            }
+        
+    }
+
+    .vision-title{
+        color:white;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .vision-subtext{
+        font-size: 8px;
+        margin-right: 100px;
+    }
+
+    .title{
+        font-size: 45px;
+    }
+
+    .card {
+        height: 10rem;
+        width: 10rem;
+        
+    }
+
+
+    .card-title {
+        color: white; 
+        font-size: 14px; 
+        font-weight: 500;
+        margin-bottom: 10px; /* Yazılar arasında boşluk bırakmak için */
+    }
+    
+    .card-text {
+        color: white;
+        font-size: 6px; 
+        font-weight: 400;
+        margin-bottom: 10px; /* Yazılar arasında boşluk bırakmak için */
+    }
+
+    .control{
+        height: 26px;
+        margin-top: 50px
+    }
+
+    .button {
+        width: 32px; /* Düğmenin genişliğini istediğiniz boyuta ayarlayın */
+        height:32px; /* Düğmenin yüksekliğini istediğiniz boyuta ayarlayın */
+        font-size: 14px; /* İçerideki simgenin boyutunu ayarlayın */
+        padding: 0; /* İstenirse, iç kenar boşluğunu kaldırın */
+      }
+    
+    .button-container{
+        bottom: 13px;
+    }  
+      
+    
+  
+  }
