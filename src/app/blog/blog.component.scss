@@ -1,0 +1,16 @@
+.blog-container{
+    padding: 120px;    
+    background-image: linear-gradient(to top, white, rgb(0, 0, 0));
+
+}
+
+.image-area{
+    background-repeat: no-repeat; /* Resmin tekrarlanmasını engeller */
+    background-size: cover; /* Resmi kaplar, ancak oranları korur */
+    height: 100%;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+}

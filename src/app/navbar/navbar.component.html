@@ -1,27 +1,24 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+<nav
+  class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+  data-bs-theme="dark"
+>
   <div class="container-fluid">
     <div class="left-side">
-      <img src="../../assets/logo.png" width="60px" alt="calıskan-oto-logo">
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <img src="../../assets/logo.png" width="60px" alt="calıskan-oto-logo" />
     </div>
     <div class="right-side">
-      <div class="collapse navbar-collapse navbar-list" id="navbarSupportedContent">
+      <div
+        class="collapse navbar-collapse navbar-list"
+        id="navbarSupportedContent"
+      >
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+            <a class="nav-link active" aria-current="page" href="#"
+              >Ana Sayfa</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Galeri</a>
+            <a class="nav-link" [href]="'/gallery/'">Galeri</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -34,17 +31,30 @@
               Hizmetlerimiz
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              @for (blogItem of blogs; track $index) {
+              <li class="list-group-item">
+                <a
+                  class="dropdown-item"
+                  (click)="navigateToBlog(blogItem.id)"
+                  >{{ blogItem.title }}</a
+                >
+              </li>
+              }
             </ul>
           </li>
         </ul>
-      </div> 
+      </div>
     </div>
-    
-  
-  
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>
 </nav>
