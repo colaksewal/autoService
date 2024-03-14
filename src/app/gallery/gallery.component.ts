@@ -40,19 +40,15 @@ export class GalleryComponent {
 ];
 
 
-  animal?: string;
-  name?: string;
-
   constructor(public dialog: MatDialog) {}
 
   openDialog(urlFromGallery: string): void {
     const dialogRef = this.dialog.open(DialogOverviewExampleComponent, {
-      data: {name: this.name, animal: this.animal ,url: urlFromGallery},
+      data: {url: urlFromGallery},
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      this.animal = result;
     });
   }
 

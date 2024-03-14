@@ -1,8 +1,10 @@
+<mat-dialog-actions class = "gallery-button" style ="justify-content: flex-end;">
+  <button mat-button (click)="onNoClick()" >
+    <mat-icon>clear</mat-icon>
+  </button>
+</mat-dialog-actions>
 <mat-dialog-content>
   <img src=" {{data.url}} " alt="image" height="500px">
   
 </mat-dialog-content>
-<mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">No Thanks</button>
-  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
-</mat-dialog-actions>
+

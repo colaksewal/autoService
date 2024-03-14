@@ -3,6 +3,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+
 import {
   MatDialog,
   MAT_DIALOG_DATA,
@@ -29,6 +31,7 @@ import { DialogData } from '../gallery.component';
     MatDialogContent,
     MatDialogActions,
     MatDialogClose,
+    MatIconModule
   ],
 })
 export class DialogOverviewExampleComponent {

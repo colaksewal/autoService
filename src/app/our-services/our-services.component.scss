@@ -98,8 +98,8 @@
 }
 
 .right-column img {
-    max-width: 70%; /* Resmin en fazla genişliğini %100 yapar */
-    height: auto; /* Otomatik yükseklik ayarı, orijinal en-boy oranını korur */
+    max-width: 70%; /* Resmin en fazla genişliğini %70 olacak şekilde ayarlamak için */
+    height: auto; /* Otomatik yükseklik ayarı, fotoğrafın orjinalini korumak için */
 }
 
 
@@ -113,7 +113,7 @@
 
 .vision-text{
     color:white;
-    font-size: 35px;
+    font-size: 20px;
 }
 
 .vision-subtext{
@@ -125,7 +125,7 @@
     font-size: 70px;
     font-weight: 800;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     text-shadow: 2px 4px 4px rgba(255, 45, 45, 0.5); /* Gölge rengini ve boyutunu ayarlayın */
 }
 

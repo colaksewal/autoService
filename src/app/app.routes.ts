@@ -10,5 +10,4 @@ export const routes: Routes = [
     { path: "main", component: MainComponent },
     { path: 'blog/:id', component: BlogComponent},
     { path: 'gallery', component: GalleryComponent}
-
 ];

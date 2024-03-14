@@ -10,14 +10,15 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-
-  blog: any;
+ 
+    blog: any;
     blogs = blogData[0]; // Burada blog verilerini kullanın
 
   
     constructor(private route: ActivatedRoute, private router: Router) { } // Router ekleniyor
   
     ngOnInit(): void {
+      //follow the blog site id in blogData
       this.route.params.subscribe(params => {
           if (params['id']) {
               const id = parseInt(params['id']);
@@ -26,14 +27,14 @@ export class NavbarComponent {
       });
     }
 
-    
+    //For the blog title and goes to relative blog site
     navigateToBlog(id: string): void {
-      console.log("girdi", id);
       this.router.navigate(['/blog', id]);
     }
 
+    //For telephone icon to navigate call application
     makePhoneCall(phoneNumber: string): void {
-      window.location.href = 'tel:' + phoneNumber;
+      window.location.href = 'tel:' + phoneNumber;//new window open
     }
 
 

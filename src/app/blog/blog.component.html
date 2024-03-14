@@ -3,21 +3,21 @@
 <div class="blog-container">
   <div class="container text-center">
     <div class="row">
-      <div class="col-8">
+      <div class="col-sm-8">
         <div class="image-area" [ngStyle]="{ 'background-image': 'url(' + blog?.mainImage + ')'}">
           <!-- Butonlar buraya eklenebilir -->
         </div>
       </div>
 
-      <div class="col-4">
-        <div class="card" style="width: 26rem;">
+      <div class="col-sm-4">
+        <div class="card  oto-card">
           <div class="card-body">
             <img src="../../assets/logo (1).png" class="img-fluid">
             <p>Daha Fazlası için bize ulaşın</p>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
-        <div class="card mt-4 " style="width: 26rem;">
+        <div class="card mt-4 oto-card" >
           <div class="card-body social-media">
             <a href="https://www.instagram.com/caliskan_oto_/" class="card-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -43,13 +43,13 @@
     </div>
 
     <div class="row mt-5">
-      <div class="col-8">
+      <div class="col-sm-8">
         <!-- Blog içeriği buraya gelir -->
         <h1>{{ blog?.title }}</h1>
         <p>{{ blog?.description }}</p>
       </div>
 
-      <div class="col-4">
+      <div class="col-sm-4">
         <!-- Yan menü buraya eklenebilir -->
         <ul class="list-group">
           <li class="list-group-item "  *ngFor="let blogItem of blogs">

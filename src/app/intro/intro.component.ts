@@ -11,6 +11,8 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrl: './intro.component.scss'
 })
 export class IntroComponent {
+  
+  //For telephone icon to make a call with user's call application
   makePhoneCall(phoneNumber: string): void {
     window.location.href = 'tel:' + phoneNumber;
   }
